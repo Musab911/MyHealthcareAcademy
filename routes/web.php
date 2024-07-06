@@ -53,10 +53,9 @@ Route::post('/internships/store', [admin::class, 'store'])->name('internships.st
 
 Route::post('/fetch-internships', [admin::class, 'fetchMatchingInternships'])->name('internships.fetch');
 use App\Http\Controllers\user;
-
+Route::get('/locations', [user::class, 'location']);
 //Route::post('/get-industries', [admin::class, 'getIndustries']);
 Route::post('/get-internships', [admin::class, 'fetchInternships']);
 Route::get('/practice', [admin::class, 'fahad']);
 Route::get('/internshipform', [admin::class, 'userform'])->name('user');
 Route::get('/internform', [user::class, 'internform'])->name('internform');
-
