@@ -14,7 +14,6 @@ h1 {
     font-size: 50px;
     text-transform: capitalize;
     line-height: 60px;
-    
 }
 
 h1,
@@ -97,33 +96,39 @@ button:hover {
     cursor: pointer;
     background-color: var(--pdark);
 }
-.row{
+.row {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: start;
     column-gap: 50px;
 }
-.card{
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.card {
     width: 33.33%;
     height: auto;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
-.icon-bg{
+.icon-bg {
     background-color: var(--primary);
-    width:50px;
+    width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-
 }
-.icon{
-
-    color:white;
+.icon {
+    color: white;
     font-size: 20px;
 }
 
@@ -139,26 +144,26 @@ button:hover {
     color: yellow;
 }
 
-
 .container-wrapper {
     overflow: auto;
-    min-height: 100vh;
+    min-height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 0px;
 }
 .container-wrapper-col {
     overflow: auto;
-    min-height: 100vh;
+    min-height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 50px;
+    padding: 10% 0% 0% 0%;
 }
-
 
 .custom-shape-divider-bottom-1718970809 {
     position: absolute;
@@ -182,7 +187,6 @@ button:hover {
     fill: #ffffff;
 }
 
-
 .cont {
     overflow: auto;
     min-height: 100vh;
@@ -195,19 +199,19 @@ button:hover {
     row-gap: 30px;
 }
 
-.a{  
+.a {
     display: flex;
-   flex-direction: row;
+    flex-direction: row;
     position: relative;
     width: 100%;
-    height:20Px;
+    height: 20px;
 }
 
 .cdd {
     display: flex;
     flex-direction: row;
-    
-    width: 100%;    
+
+    width: 100%;
     padding: 20px;
     font-size: 57px;
     line-height: 66px;
@@ -244,10 +248,6 @@ button:hover {
     object-fit: cover;
 }
 
-
-
-
-
 .container {
     width: 80%;
     display: flex;
@@ -262,6 +262,7 @@ img {
 }
 
 .inner {
+    justify-content: center;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -279,10 +280,10 @@ img {
 
 .content {
     width: 80%;
-    column-gap: 20px;
+    column-gap: 80px;
     display: flex;
     flex-direction: row;
-   
+
     align-items: left;
 }
 .content.slider {
@@ -297,18 +298,16 @@ img {
     padding: 10px 0px;
 }
 .content.slider::-webkit-scrollbar {
-    
     width: 8px;
     height: 8px;
 }
 
 .content.slider::-webkit-scrollbar-track {
-    
     background: #f1f1f1;
 }
 
 .content.slider::-webkit-scrollbar-thumb {
-    background:var(--primary);
+    background: var(--primary);
     border-radius: 6px;
 }
 
@@ -327,7 +326,7 @@ img {
     row-gap: 10px;
     color: white;
 }
-h3.card-text{
+h3.card-text {
     color: white;
     font-weight: 300;
 }
@@ -342,7 +341,7 @@ h3.card-text{
 
 .top-content {
     width: 80%;
-    column-gap: 15px;
+    column-gap: 80px;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -366,7 +365,6 @@ h3.card-text{
     justify-content: space-between;
     align-items: center;
 }
- 
 
 .counter-div {
     display: flex;
@@ -383,30 +381,6 @@ h3.card-text{
 .counter-div h3 {
     font-size: 22px;
     color: black;
-}
-
-#hero {
-    background-color: hsla(229, 100%, 63%, 1);
-    background-image: radial-gradient(
-            at 86% 40%,
-            hsla(267, 59%, 86%, 1) 0px,
-            transparent 50%
-        ),
-        radial-gradient(at 63% 96%, hsla(218, 68%, 65%, 1) 0px, transparent 50%),
-        radial-gradient(at 52% 3%, hsla(145, 0%, 86%, 1) 0px, transparent 50%),
-        radial-gradient(at 0% 46%, hsla(247, 64%, 63%, 1) 0px, transparent 50%),
-        radial-gradient(
-            at 30% 62%,
-            hsla(332, 100%, 93%, 1) 0px,
-            transparent 50%
-        ),
-        radial-gradient(at 42% 86%, hsla(270, 61%, 75%, 1) 0px, transparent 50%),
-        radial-gradient(at 67% 83%, hsla(63, 84%, 65%, 1) 0px, transparent 50%);
-    position: relative;
-}
-
-#hero h1 {
-    color: rgb(184, 184, 253);
 }
 
 .carousel {
@@ -494,6 +468,14 @@ h3.card-text{
 .fade-out {
     animation: fadeOut 1s forwards;
 }
+@keyframes rotate{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
 
 @keyframes fadeIn {
     from {
@@ -530,16 +512,11 @@ h3.card-text{
     background-color: white;
     border: 1px solid white;
 }
-img.card-image{
+img.card-image {
     width: 80px;
     height: auto;
     object-fit: contain;
 }
-
-
-
-
-
 
 /* navbar css start*/
 nav {
@@ -675,22 +652,73 @@ nav ul li a:hover {
 .logos {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     width: 50%;
-    height:70vh;
-    }
-    
-    .logo {
+    height: 70vh;
+}
+
+.logo {
+    width: 30%;
     display: flex;
     flex-direction: column;
-    }
-    
-    .logo img {
-    max-width: 180px;
-    max-height: 120px;
-    }
-    
+}
 
+.logo img {
+    max-width: 100%;
+    max-height: auto;
+}
+.globe{
+    height:auto; 
+    width:400px;
+    padding:40px;
+    animation: rotate 20s linear infinite;
+    object-fit: contain;
+}
+.location-card{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    background-size: cover;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.686);
+}
+
+.location-card:hover{
+    color: white;
+    transform: scale(1.01);
+    cursor:pointer;
+}
+#hero {
+    background-color: hsla(229, 100%, 63%, 1);
+    background-image: radial-gradient(
+            at 86% 40%,
+            hsla(267, 59%, 86%, 1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(at 63% 96%, hsla(218, 68%, 65%, 1) 0px, transparent 50%),
+        radial-gradient(at 52% 3%, hsla(145, 0%, 86%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 46%, hsla(247, 64%, 63%, 1) 0px, transparent 50%),
+        radial-gradient(
+            at 30% 62%,
+            hsla(332, 100%, 93%, 1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(at 42% 86%, hsla(270, 61%, 75%, 1) 0px, transparent 50%),
+        radial-gradient(at 67% 83%, hsla(63, 84%, 65%, 1) 0px, transparent 50%);
+    position: relative;
+    min-height: 650px;
+    
+}
+
+#hero h1 {
+    color: rgb(184, 184, 253);
+}
 
 @media screen and (max-width: 790px) {
     .hamburger {
@@ -702,14 +730,7 @@ nav ul li a:hover {
     }
 }
 
- 
-
-
 /* navbar css end */
-
-
-
-
 
 @media (max-width: 767px) {
     .custom-shape-divider-bottom-1718970809 svg {
@@ -762,7 +783,7 @@ nav ul li a:hover {
         row-gap: 18px;
     }
     .container-wrapper {
-        min-height: unset;
+        min-height: min-content;
         padding: 50px 0px;
     }
     .carousel-slide {
@@ -796,40 +817,40 @@ nav ul li a:hover {
     }
     .card {
         width: 100%;
-        
     }
-    .container-wrapper-col:first-child{
-        width:90%;
+    .container-wrapper-col:first-child {
+        width: 90%;
     }
 
     .logos {
-       
         gap: 5px;
         width: 100%;
-        height:30vh;
-        }
-   
-        .logo img {
-            max-width: 100px;
-            max-height: 50px;
-            }
+        height: 30vh;
+    }
+
+    .logo img {
+        max-width: 100px;
+        max-height: 50px;
+    }
+    .location-card{
+    width: 100%;
+    
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .content {
         width: 85%;
-        
     }
-    #hero{
+    #hero {
         min-height: 50vh;
     }
 
     .logos {
-       
         gap: 10px;
         width: 100%;
-        height:50vh;
-        }
+        height: 50vh;
+    }
 
     .top-aligned {
         width: 100% !important;
@@ -843,8 +864,6 @@ nav ul li a:hover {
     .inner p {
         width: 100% !important;
     }
-
-    
 
     .counter-div h3 {
         font-size: 18px;
@@ -866,17 +885,16 @@ nav ul li a:hover {
         flex-direction: column;
         row-gap: 18px;
     }
-        .rating {
-            
-            justify-content: start;
-            gap: 60px;
-        }
+    .rating {
+        justify-content: start;
+        gap: 60px;
+    }
 
     .container-wrapper {
         min-height: max-content;
         padding: 20px 0px 70px 0px;
     }
-    .carousel{
+    .carousel {
         height: 50vh;
         padding: 20px 0px;
     }
@@ -907,7 +925,7 @@ nav ul li a:hover {
     .carousel-description {
         font-size: 14px;
     }
-    .content-col{
+    .content-col {
         width: 90%;
         padding: 70px 0px;
     }
@@ -919,11 +937,10 @@ nav ul li a:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        
     }
     .para {
         width: 90%;
-        padding:20px
+        padding: 20px;
     }
     .image-review {
         width: 90%;
@@ -933,5 +950,8 @@ nav ul li a:hover {
         width: 100%;
         height: auto;
     }
-
+    .location-card{
+    width: 45%;
+    
+}
 }

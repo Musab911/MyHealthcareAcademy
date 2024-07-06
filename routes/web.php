@@ -20,7 +20,7 @@ Route::post('/get-industries', [admin::class, 'getIndustries'])->name('get-indus
 Route::post('/get-internships', [admin::class, 'fetchInternships']);
 Route::get('/practice', [admin::class, 'fahad']);
 Route::get('/aboutus', [admin::class, 'aboutus']);
-Route::get('/contactus', [admin::class, 'contactus']);
+
 
 
 Route::post('/get-fields', [admin::class, 'getFields'])->name('get.fields');
@@ -53,10 +53,9 @@ Route::post('/internships/store', [admin::class, 'store'])->name('internships.st
 
 Route::post('/fetch-internships', [admin::class, 'fetchMatchingInternships'])->name('internships.fetch');
 use App\Http\Controllers\user;
-
+Route::get('/locations', [user::class, 'location']);
 //Route::post('/get-industries', [admin::class, 'getIndustries']);
 Route::post('/get-internships', [admin::class, 'fetchInternships']);
 Route::get('/practice', [admin::class, 'fahad']);
 Route::get('/internshipform', [admin::class, 'userform'])->name('user');
 Route::get('/internform', [user::class, 'internform'])->name('internform');
-

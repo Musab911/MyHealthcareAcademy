@@ -66,9 +66,6 @@ class admin extends Controller
     public function aboutus(){
         return view('aboutus');
     }
-    public function contactus(){
-        return view('contact');
-    }
     public function show($id)
     {
         $internship = Internship::findOrFail($id);
