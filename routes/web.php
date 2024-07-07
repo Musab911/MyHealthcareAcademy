@@ -61,4 +61,5 @@ Route::post('/get-internships', [admin::class, 'fetchInternships']);
 Route::get('/practice', [admin::class, 'fahad']);
 Route::get('/internshipform', [admin::class, 'userform'])->name('user');
 Route::get('/internform', [user::class, 'internform'])->name('internform');
+Route::get('/locations', [user::class, 'location']);
 
