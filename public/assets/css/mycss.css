@@ -1,0 +1,37 @@
+.cardform {
+    display: flex;
+    width: 100%;
+}
+.form-group label{
+    
+    text-align: left;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.btn-primary {
+    background-color: rgb(26, 40, 85);
+}
+.card-title {
+    display: flex;
+    margin-top: 70px;
+}
+.form-check {
+    display: flex;
+    padding-bottom:15px ;
+
+}
+.alert-success {
+    padding: 10px 0px;
+    background-color: #6dcb9a!important;
+
+} 
+.btn {
+    background-color: rgb(26, 40, 85);
+}
