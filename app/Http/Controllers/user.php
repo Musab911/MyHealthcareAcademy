@@ -10,4 +10,9 @@ class user extends Controller
 
    return view('internform');
    }
+   
+    public function  location(){
+
+   return view('locations');
+   }
 }
