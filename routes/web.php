@@ -15,17 +15,18 @@ Route::get('/intern/{id}', [Admin::class, 'show'])->name('intern.show');
 
 Route::post('/applications/store', [Admin::class, 'save'])->name('applications.store');
 
+Route::get('/applications/show', [Admin::class, 'display_applications'])->name('applications.show');
 
 Route::post('/get-industries', [admin::class, 'getIndustries'])->name('get-industries');
 Route::post('/get-internships', [admin::class, 'fetchInternships']);
 Route::get('/practice', [admin::class, 'fahad']);
-Route::get('/aboutus', [admin::class, 'aboutus']);
+Route::get('/aboutus', [admin::class, 'aboutus'])->name('about.us');
 
 
 
 Route::post('/get-fields', [admin::class, 'getFields'])->name('get.fields');
 Route::get('/admin', [admin::class, 'dashboard'])->name('admin');
-Route::get('/index', [admin::class, 'homepage'])->name('user');
+Route::get('/index', [admin::class, 'homepage'])->name('index');
 Route::get('/form', [admin::class, 'form'])->name('form');
 Route::get('/icons', [admin::class, 'icon'])->name('icons');
 Route::get('/login', [admin::class, 'login'])->name('login');
@@ -55,6 +56,8 @@ Route::post('/internships/store', [admin::class, 'store'])->name('internships.st
 
 Route::post('/fetch-internships', [admin::class, 'fetchMatchingInternships'])->name('internships.fetch');
 use App\Http\Controllers\user;
+Route::get('/contact', [User::class, 'contact'])->name('contact.us');
+Route::get('/location', [admin::class, 'location'])->name('location');
 
 //Route::post('/get-industries', [admin::class, 'getIndustries']);
 Route::post('/get-internships', [admin::class, 'fetchInternships']);

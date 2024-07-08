@@ -1,44 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship Details</title>
-    <link href="{{ asset('assets/css/form.css') }}" rel="stylesheet" />
-    <!-- Include Select2 CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin: 7%;
-            background-color: white;
-            padding: 6%;
-       
-            width: 71%;
-        }
+@section('title', 'Internship Details')
 
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        h2, h3 {
-            margin: 0 0 15px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-/* Specific CSS for aligning radio buttons and labels in the form */
-   
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
-</head>
-
-<body>
+@push('styles')
+<link href="{{ asset('assets/css/form.css') }}" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 7%;
+        background-color: white;
     
+        width: 71%;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    h2, h3 {
+        margin: 0 0 15px;
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+@endpush
+
+@section('content')
+
 <div class="outercontainer">
    <div class="messagecontainer">
    @if (session('success'))
@@ -414,6 +407,5 @@
     </script>
 
 </div>
-</body>
 
-</html>
+@endsection

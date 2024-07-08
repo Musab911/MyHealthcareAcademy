@@ -39,6 +39,13 @@ class admin extends Controller
     {
         return view('admin/login');
     }
+    public function display_applications()
+    {
+        $applications = Application::all();
+        return view('applications', compact('applications'));
+    }
+    
+
 
     public function profile()
     {

@@ -15,4 +15,10 @@ class user extends Controller
 
    return view('locations');
    }
+
+   public function contact(){
+
+      return view('contact');
+      
+   }
 }
