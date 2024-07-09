@@ -19,7 +19,7 @@ Route::get('/applications/show', [Admin::class, 'display_applications'])->name('
 
 Route::post('/get-industries', [admin::class, 'getIndustries'])->name('get-industries');
 Route::post('/get-internships', [admin::class, 'fetchInternships']);
-Route::get('/practice', [admin::class, 'fahad']);
+//Route::get('/practice', [admin::class, 'fahad'])->name('apply.now');
 Route::get('/aboutus', [admin::class, 'aboutus'])->name('about.us');
 
 
@@ -61,8 +61,10 @@ Route::get('/contact', [User::class, 'contact'])->name('contact.us');
 
 //Route::post('/get-industries', [admin::class, 'getIndustries']);
 Route::post('/get-internships', [admin::class, 'fetchInternships']);
-Route::get('/practice', [admin::class, 'fahad']);
+
+
+
+Route::get('/practice', [admin::class, 'fahad'])->name('apply.now');
 Route::get('/internshipform', [admin::class, 'userform'])->name('user');
 Route::get('/internform', [user::class, 'internform'])->name('internform');
 Route::get('/locations', [user::class, 'location'])->name('location');
-

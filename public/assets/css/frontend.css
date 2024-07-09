@@ -531,11 +531,11 @@ nav {
 
 nav .logo {
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 nav .logo img {
-    height: 25px;
+    height: 45px;
     width: auto;
     margin-right: 10px;
 }
@@ -557,13 +557,38 @@ nav ul li {
     margin-left: 1.5rem;
 }
 
+
+.hover-img{
+    position: absolute;
+    width: 50%;
+    top:50px;
+    left: 0px;
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(5px 5px 5px rgba(30, 29, 29, 0.03));
+
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 nav ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 95%;
+    font-size: 14px;
     font-weight: 400;
     padding: 4px 8px;
     border-radius: 5px;
+}
+nav ul li a:active{
+    color: var(--primary);
+    font-size: 16px;
 }
 
 nav ul li a:hover {
@@ -839,6 +864,9 @@ nav ul li a:hover {
     .hamburger {
         display: block;
     }
+    nav{
+        padding: 15px;
+    }
 
     nav ul {
         display: none;
@@ -860,6 +888,9 @@ nav ul li a:hover {
         display: flex;
         flex-direction: column;
         row-gap: 18px;
+    }
+    nav{
+        padding: 15px;
     }
     .inner {
         width: 100% !important;

@@ -14,22 +14,15 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="assets/Logo64x64.png" alt="logo" />
-            <h1>LOGO</h1>
+            <img src="assets/images/logo.png" alt="logo" />
+
         </div>
         <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Contact Us</a>
-            </li>
+            <li><a href="{{ route('index') }}">Home</a></li>
+            <li><a href="{{ route('apply.now') }}">Apply Now</a></li>
+            <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
+            <li><a href="{{ route('about.us') }}">About Us</a></li>
+            <li><a href="{{ route('location') }}">Locations</a></li>
         </ul>
         <div class="hamburger">
             <span class="line"></span>
@@ -39,18 +32,11 @@
     </nav>
     <div class="menubar">
         <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Contact Us</a>
-            </li>
+            <li><a href="{{ route('index') }}">Home</a></li>
+            <li><a href="{{ route('apply.now') }}">Apply Now</a></li>
+            <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
+            <li><a href="{{ route('about.us') }}">About Us</a></li>
+            <li><a href="{{ route('location') }}">Locations</a></li>
         </ul>
     </div>
     <div class="container-wrapper" id="hero">
@@ -77,11 +63,12 @@
                     <button>Learn More</button>
                 </div>
             </div>
-            <div class="inner" style="width: 40%">
-                <img src="/assets/images/doctors.webp" alt="" />
+            <div class="inner" style="width: 40%; position:relative;">
+                <img src="/assets/images/14.png" alt="" />
+                <img src="/assets/images/2.png" class="hover-img" alt="" />
             </div>
         </div>
-        <div class="custom-shape-divider-bottom-1718970809">
+        <div class=" custom-shape-divider-bottom-1718970809">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
                 <path
@@ -135,7 +122,8 @@
                         <span class="blue">4.6/5</span><span class="yellow"> ★★★★</span><br /><span> GoAbroad</span>
                     </div>
                     <div>
-                        <span class="blue">4.6/5 </span><span class="yellow">★★★★</span><br /><span> Trustpilot</span>
+                        <span class="blue">4.6/5 </span><span class="yellow">★★★★</span><br /><span>
+                            Trustpilot</span>
                     </div>
                 </div>
             </div>
@@ -153,7 +141,8 @@
                     <span class="carousel-dot" onclick="currentSlide(2)"></span>
                 </div>
                 <div class="carousel-subheading">build your confidence</div>
-                <div class="carousel-description">Our program empowers you with the skills and experience that employers
+                <div class="carousel-description">Our program empowers you with the skills and experience that
+                    employers
                     value. Knowing you have what it takes to succeed, you will start your career journey with
                     confidence. </div>
             </div>
@@ -168,7 +157,8 @@
                         <i class="fa-solid fa-location-dot icon"></i>
                     </div>
                     <h3>1. Design Your Program</h3>
-                    <p>Our program can be taken in 14 of the world’s most exciting cities. Pick a city that suits your
+                    <p>Our program can be taken in 14 of the world’s most exciting cities. Pick a city that suits
+                        your
                         career goals.</p>
                 </div>
                 <div class="card">
@@ -176,7 +166,8 @@
                         <i class="fa-solid fa-pencil icon"></i>
                     </div>
                     <h3>2. Apply Online</h3>
-                    <p>If you are eligible you will be invited to attend an admission interview to discuss your program
+                    <p>If you are eligible you will be invited to attend an admission interview to discuss your
+                        program
                         further.</p>
                 </div>
                 <div class="card">
@@ -184,7 +175,8 @@
                         <i class="fa-solid fa-lightbulb icon"></i>
                     </div>
                     <h3>3. Get Excited!</h3>
-                    <p>As soon as you are accepted we’ll begin preparing your program. Starting with understanding your
+                    <p>As soon as you are accepted we’ll begin preparing your program. Starting with understanding
+                        your
                         goals and matching your profile with one of our host company partners.</p>
                 </div>
             </div>
@@ -201,7 +193,8 @@
             <div class="top-aligned" style="width: 40%">
                 <p>
                     Our programs span 14 vibrant cities worldwide, each offering unique opportunities for growth and
-                    cultural immersion. These carefully chosen locations enhance your educational journey. Join us to
+                    cultural immersion. These carefully chosen locations enhance your educational journey. Join us
+                    to
                     broaden your horizons and explore new possibilities.
                 </p>
             </div>
