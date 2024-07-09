@@ -14,22 +14,14 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="assets/Logo64x64.png" alt="logo" />
-            <h1>LOGO</h1>
+            <img src="assets/images/logo.png" alt="logo" />
         </div>
         <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Contact Us</a>
-            </li>
+            <li><a href="{{ route('index') }}">Home</a></li>
+            <li><a href="{{ route('apply.now') }}">Apply Now</a></li>
+            <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
+            <li><a href="{{ route('about.us') }}">About Us</a></li>
+            <li><a href="{{ route('location') }}">Locations</a></li>
         </ul>
         <div class="hamburger">
             <span class="line"></span>

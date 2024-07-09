@@ -12,6 +12,23 @@
 </head>
 
 <body>
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="logo" />
+        </div>
+        <ul>
+            <li><a href="{{ route('index') }}">Home</a></li>
+            <li><a href="{{ route('apply.now') }}">Apply Now</a></li>
+            <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
+            <li><a href="{{ route('about.us') }}">About Us</a></li>
+            <li><a href="{{ route('location') }}">Locations</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </nav>
     <div class="container-wrapper" id="hero">
         <div class="content">
             <div class="inner">

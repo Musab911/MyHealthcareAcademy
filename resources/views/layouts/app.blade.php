@@ -9,21 +9,22 @@
     <link href="{{ asset('assets/css/frontend.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    @stack('styles') <!-- Stack for additional styles -->
+    @stack('styles')
+    <!-- Stack for additional styles -->
 </head>
 
 <body>
     <nav>
         <div class="logo">
-            <img src="{{ asset('assets/Logo64x64.png') }}" alt="logo" />
-            <h1>LOGO</h1>
+            <img src="{{ asset('assets/images/logo.png') }}" alt="logo" />
+
         </div>
         <ul>
-        <li><a href="{{ route('index') }}">Home</a></li>
-
-            <li><a   href="{{ route('contact.us') }}">Contact Us</a></li>
-            <li><a   href="{{ route('about.us') }}">About Us</a></li>
-            <li><a  href="{{ route('locations') }}">Locations</a></li>
+            <li><a href="{{ route('index') }}">Home</a></li>
+            <li><a href="{{ route('apply.now') }}">Apply Now</a></li>
+            <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
+            <li><a href="{{ route('about.us') }}">About Us</a></li>
+            <li><a href="{{ route('location') }}">Locations</a></li>
         </ul>
         <div class="hamburger">
             <span class="line"></span>
@@ -33,8 +34,11 @@
     </nav>
     <div class="menubar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="{{ route('index') }}">Home</a></li>
+            <li><a href="{{ route('apply.now') }}">Apply Now</a></li>
+            <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
+            <li><a href="{{ route('about.us') }}">About Us</a></li>
+            <li><a href="{{ route('location') }}">Locations</a></li>
         </ul>
     </div>
 
