@@ -815,7 +815,7 @@ justify-content: center;
  .messagecontainer{
     position: absolute;
     border-radius: 10px;
-    top:50px;
+    top:110px;
     right: 15px;
     padding: 15px 10px;
     box-shadow: -5px 10px 15px #00000038;

@@ -23,7 +23,7 @@
 
             <li><a   href="{{ route('contact.us') }}">Contact Us</a></li>
             <li><a   href="{{ route('about.us') }}">About Us</a></li>
-            <li><a  href="{{ route('location') }}">Locations</a></li>
+            <li><a  href="{{ route('locations') }}">Locations</a></li>
         </ul>
         <div class="hamburger">
             <span class="line"></span>
