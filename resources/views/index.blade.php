@@ -13,7 +13,7 @@
 
 <body>
     <nav>
-        <div class="logo">
+        <div class=" logo">
             <img src="assets/images/logo.png" alt="logo" />
 
         </div>
@@ -107,10 +107,12 @@
 
             <div class="top-aligned" style="width: 40%">
                 <p>
-                    My Academy Center provides immersive global experiences that help
-                    shape the personal and professional growth of ambitious individuals.
-                    Our program participants get the chance to travel, work, and be part
-                    of vibrant cultures and communities across the world.
+
+
+                    My Healthcare Academy connects students with global healthcare internships, focusing on
+                    opportunities for aspiring doctors and nurses. We provide hands-on experience and exposure to
+                    diverse medical practices, helping students prepare for successful careers and make a meaningful
+                    impact in healthcare.
                 </p>
 
                 <div class="rating">

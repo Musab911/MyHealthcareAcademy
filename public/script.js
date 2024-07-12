@@ -143,3 +143,24 @@ const toggleNav = () => {
 };
 mobileNav.addEventListener("click", () => toggleNav());
 // nsvbar js end
+//navbar animation start
+document.addEventListener("DOMContentLoaded", function () {
+    let header = document.querySelector('nav');
+    let hero = document.getElementById('hero');
+
+    let observer = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                header.classList.add('hero-visible');
+            } else {
+                header.classList.remove('hero-visible');
+            }
+        });
+    }, {
+        threshold: 0.1 // Adjust this value according to when you want the header to change
+    });
+
+    observer.observe(hero);
+});
+
+//navbar animation end

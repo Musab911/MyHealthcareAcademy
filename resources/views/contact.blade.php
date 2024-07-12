@@ -52,10 +52,15 @@
         <div class="content">
             <div class="inner" style="width: 60%">
                 <h1>
-                    Learn <span class="blue-text">Get in</span><br />touch
-                    <span class="blue-text">with</span> <br />our
-                    <span class="blue-text">team.</span>
+                    Let's <span class="blue-text">Get in touch</span><br />
+                    with our team
                 </h1>
+
+                <p style="color: white; width: 80%">
+                    Our team at My Healthcare Academy is here to support you. Whether you have questions or need
+                    guidance, we're just a message away. Reach out and let's achieve your healthcare career goals
+                    together.
+                </p>
 
                 <div class="buttons">
 
@@ -69,7 +74,7 @@
                 </div>
             </div>
             <div class="inner" style="width: 40%">
-                <img src="/assets/images/doctors.webp" alt="" />
+                <img src="/assets/images/agent1.jpg" alt="" />
             </div>
         </div>
         <div class="custom-shape-divider-bottom-1718970809">

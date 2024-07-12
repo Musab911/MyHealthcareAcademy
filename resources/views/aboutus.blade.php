@@ -53,12 +53,23 @@
                     <span class="blue-text">My Healthcare Acadmey</span>
                 </h1>
                 <p style="color: white; width: 80%">
-                    Going Healthcare means becoming a better you, with every step you take.
+                    Discover how My Healthcare Academy connects students with global healthcare internships. We
+                    specialize in opportunities for aspiring doctors and nurses, providing hands-on experience and
+                    exposure to diverse medical practices. Learn how we can help you achieve your healthcare career
+                    goals.
                 </p>
 
             </div>
-            <div class="inner" style="width: 40%">
-                <img src="/assets/images/doctors.webp" alt="" />
+            <div class="inner" style="width: 40%; position:relative;">
+
+                <img src="/assets/images/15.png" alt="" />
+                <img src="/assets/images/logobg.png" class="hover-img-logo" alt="" />
+                <div class="glass-icon-bg">
+                    <i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i>
+
+                    <p style="color:white">What is MHA?</p>
+                </div>
+
             </div>
         </div>
         <div class="custom-shape-divider-bottom-1718970809">
@@ -85,10 +96,8 @@
 
             <div class="top-aligned" style="width: 40%">
                 <p>
-                    My Academy Center provides immersive global experiences that help
-                    shape the personal and professional growth of ambitious individuals.
-                    Our program participants get the chance to travel, work, and be part
-                    of vibrant cultures and communities across the world.
+                    Join My Healthcare Academy to unlock global healthcare internship opportunities. We specialize in
+                    connecting aspiring doctors and nurses with hands-on experiences and diverse medical practices.
                 </p>
 
                 <div class="rating">
@@ -132,25 +141,24 @@
         <div class="top-content">
             <div class="top-aligned">
                 <p>
-                    Our programs span 14 vibrant cities worldwide, each offering unique opportunities for growth and
-                    cultural
-                    immersion. These carefully chosen locations enhance your educational journey. Join us to broaden
-                    your horizons
-                    and explore new possibilities.
+                    Join My Healthcare Academy to unlock unparalleled global healthcare internship opportunities. We
+                    specialize in connecting aspiring doctors and nurses with hands-on experiences and exposure to
+                    diverse medical practices. Our programs are designed to enhance your career readiness, provide
+                    personalized support, and offer invaluable networking opportunities with healthcare professionals
+                    worldwide
                 </p>
                 <ul>
-                    <li>9.3/10&#9733; rating on GoAbroad.com. Award-winning provider.</li>
-                    <li>4.8/5&#9733; rating on GoOverseas.com. Gold-verified partner.</li>
-                    <li>4.7/5&#9733; rating on TrustPilot. Verified partner.</li>
-                    <li>300+ verified reviews online.</li>
-                    <li>5,000+ host company partners.</li>
-                    <li>10,000+ qualified applications received yearly.</li>
-                    <li>50+ nationalities of interns hosted so far.</li>
+                    <li>Access to global internship placements</li>
+                    <li>Personalized support and guidance</li>
+                    <li>Exposure to diverse medical environments</li>
+                    <li>Enhanced career readiness</li>
+                    <li>Networking opportunities with healthcare professionals</li>
+
                 </ul>
             </div>
 
             <div class="top-aligned">
-                <img src="https://beyondacademy.com/wp-content/uploads/2023/09/Group-Primrose-hill-2.webp" alt="">
+                <img src="/assets/images/10.png" alt="">
             </div>
         </div>
 
@@ -164,50 +172,36 @@
         <div class="top-content">
             <div class="top-aligned">
 
-                <h2> How did it all start?</h>
-                    <p>
+                <h2> How Did It All Start?</h2>
+                <p>
 
 
-                        Beyond Academy was founded in 2019 by Ryan Walker, a former management consultant and serial
-                        entrepreneur
-                        who managed to turn things around for himself after dropping out of school at 16. Driven by a
-                        strong
-                        motivation to turn things around for himself, Ryan stayed persistent and pursued every
-                        opportunity he could
-                        to get ahead, eventually beating the odds and going on to have a thriving corporate career. This
-                        inspired
-                        Ryan to create Beyond Academy, empowering those just starting out on their professional journey
-                        to embark on
-                        a life-changing opportunity that would change the course of their future and allow them to get
-                        ahead in
-                        their careers.</p>
-                    <h2>Where can you find us?</h2>
+                    My Healthcare Academy was established with the goal of transforming the landscape of medical
+                    education. Recognizing the challenges faced by students in gaining real-world experience, our
+                    founders set out to create a platform that offers comprehensive support and guidance. By partnering
+                    with leading healthcare institutions globally, we have been able to provide students with unique
+                    opportunities to enhance their clinical skills and professional development.</p>
+                <h2>Where can you find us?</h2>
 
-                    <p>We’re a fully remote company – no traditional offices here! We mostly work from home (sometimes
-                        in our PJs
-                        when we can help it), but you’ll also find us hanging out in co-working spaces or soaking up
-                        inspiration in
-                        trendy cafés. Don’t let the casual vibe fool you though; every single one of us works hard to
-                        deliver on
-                        what we promise to you and make our fantastic programs a reality.</p>
-                    <h2>Who are the people behind Beyond?<h2>
+                <p>We are a fully remote company, leveraging the flexibility of modern technology to operate without
+                    traditional office spaces. Our team works from various locations, often collaborating from home
+                    offices, co-working spaces, or inspiring cafes. This remote setup allows us to remain agile and
+                    responsive, ensuring that we can deliver the best possible experience to our students and partners.
+                </p>
+                <h2>Who Are the People Behind My Healthcare Academy?<h2>
 
-                            <p>We are a truly global team with over 50 people from 17 nationalities located across 14
-                                countries! We
-                                come from various backgrounds and walks of life, yet share one thing in common – we live
-                                (or have lived)
-                                abroad, and embrace the transformative impact of travel, cultural immersion, diverse
-                                interactions, and
-                                unique experiences. It is this shared passion that unites us in our commitment to
-                                crafting programs that
-                                create life-changing opportunities.</p>
+                        <p>Our diverse team comprises professionals from various backgrounds and expertise, all united
+                            by a shared passion for healthcare and education. We believe in the transformative power of
+                            hands-on experience and cultural immersion. Each team member brings unique insights and
+                            perspectives, contributing to our mission of creating life-changing opportunities for
+                            students worldwide. Our commitment to excellence drives us to continually improve our
+                            programs and support our students in achieving their career aspirations.</p>
 
-                            <h2>Learn More and Meet Our Team</h2>
+
             </div>
 
             <div class="top-aligned">
-                <img src="https://beyondacademy.com/wp-content/uploads/2024/02/The-Beyond-Academy-Global-Team-.webp"
-                    alt="">
+                <img src="/assets/images/4.png" alt="">
             </div>
         </div>
 
@@ -216,29 +210,24 @@
 
     <div class="container-wrapper-col">
         <div class="content">
-            <h1>Why We created My Healthcare Academy?</h1>
+            <h1>Why We Created My Healthcare Academy?</h1>
         </div>
         <div class="top-content">
             <div class="top-aligned">
 
-                <h2> We created Healthcare acadmey to help you carve your own path. </h2>
+                <h2> Who Is My Healthcare Academy</h2>
                 <p>
 
-                    An average person spends 90,000 hours working over a lifetime. With 1/3 of our life at work, you
-                    deserve a
-                    career you love. The journey to a great career is unique to everyone. Whether you’re at the starting
-                    line or a
-                    crossroad, you should be able to take charge.</p>
-                <p>
-                    That’s why we created Beyond. Beyond offers career-boosting immersive programs. We bring global work
-                    experience and industry-focused learning to young people. Designed to empower and enrich, our
-                    programs give
-                    you the tools and confidence to carve your own paths.</p>
+                    My Healthcare Academy is dedicated to connecting students with exceptional healthcare internship
+                    opportunities around the world. We focus on providing aspiring doctors and nurses with hands-on
+                    experiences in diverse medical settings, equipping them with the tools they need to excel in their
+                    careers. Our programs are designed to enrich and empower students, giving them the confidence to
+                    carve their own paths in the healthcare industry.</p>
 
             </div>
 
             <div class="top-aligned">
-                <img src="https://beyondacademy.com/wp-content/uploads/2024/02/image-15.webp" alt="">
+                <img style="width:80%" src="/assets/images/16.png" alt="">
             </div>
         </div>
 
@@ -248,11 +237,11 @@
 
     <div class="container-wrapper-col">
         <div class="content">
-            <h1>Why We created My Healthcare Academy?</h1>
+            <h1>our mission</h1>
         </div>
         <div class="top-content">
             <div class="top-aligned">
-                <img src="https://beyondacademy.com/wp-content/uploads/2021/01/DSC01241-1.webp" alt="">
+                <img style="width:90% " src="/assets/images/9.png" alt="">
             </div>
 
 
@@ -267,7 +256,7 @@
                     embrace
                     individuality and aim to revolutionize education through the experience and community we create.
                     Whether
-                    you’re an aspiring engineer or entrepreneur, an artist or a coder – you can always go Beyond to
+                    you’re an aspiring doctor, nurse or a paramedic – you can always go beyond to
                     learn better,
                     travel further, and dream bigger.</p>
 
