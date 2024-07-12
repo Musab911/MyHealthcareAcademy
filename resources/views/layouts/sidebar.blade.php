@@ -8,11 +8,7 @@
             </a>
         </div>
         <ul class="sidebar-menu do-nicescrol">
-            <li>
-                <a href="{{ route('admin') }}">
-                    <i class="zmdi zmdi-view-dashboard"></i> <span>Dashboard</span>
-                </a>
-            </li>
+           
             <li>
                 <a href="{{ route('user') }}">
                     <i class="zmdi zmdi-view-dashboard"></i> <span>Internship</span>
@@ -57,6 +53,12 @@
                     <i class="zmdi zmdi-view-dashboard"></i> <span>Applications</span>
                 </a>
             </li>
+            <li>
+                <a href="{{ route('contactus.admin') }}">
+                    <i class="zmdi zmdi-view-dashboard"></i> <span>contact details</span>
+                </a>
+            </li>
+            
         </ul>
     </div>
     <!-- End sidebar-wrapper -->

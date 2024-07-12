@@ -21,17 +21,17 @@ Route::post('/get-industries', [admin::class, 'getIndustries'])->name('get-indus
 Route::post('/get-internships', [admin::class, 'fetchInternships']);
 //Route::get('/practice', [admin::class, 'fahad'])->name('apply.now');
 Route::get('/aboutus', [admin::class, 'aboutus'])->name('about.us');
-
+Route::get('/contactusadmin', [admin::class, 'contactusadmin'])->name('contactus.admin');
 
 
 Route::post('/get-fields', [admin::class, 'getFields'])->name('get.fields');
 Route::get('/admin', [admin::class, 'dashboard'])->name('admin');
 Route::get('/index', [admin::class, 'homepage'])->name('index');
 Route::get('/form', [admin::class, 'form'])->name('form');
-Route::get('/icons', [admin::class, 'icon'])->name('icons');
+
 Route::get('/login', [admin::class, 'login'])->name('login');
 Route::get('/register', [admin::class, 'register'])->name('register');
-Route::get('/passwordreset', [admin::class, 'passwordreset'])->name('passwordreset');
+
 Route::get('/industry', [admin::class, 'add_industry'])->name('add.industry');
 Route::get('/profile', [admin::class, 'profile'])->name('profile');
 use App\Http\Controllers\CityController;
@@ -59,6 +59,9 @@ use App\Http\Controllers\user;
 Route::get('/contact', [User::class, 'contact'])->name('contact.us');
 
 
+Route::post('/contactus', [User::class, 'contact_us'])->name('contact.store');
+
+
 //Route::post('/get-industries', [admin::class, 'getIndustries']);
 Route::post('/get-internships', [admin::class, 'fetchInternships']);
 
@@ -68,3 +71,6 @@ Route::get('/practice', [admin::class, 'fahad'])->name('apply.now');
 Route::get('/internshipform', [admin::class, 'userform'])->name('user');
 Route::get('/internform', [user::class, 'internform'])->name('internform');
 Route::get('/locations', [user::class, 'location'])->name('location');
+
+
+

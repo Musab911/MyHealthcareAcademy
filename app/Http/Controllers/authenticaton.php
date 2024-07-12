@@ -40,7 +40,7 @@ class authenticaton extends Controller
     
         if (Auth::guard('admin')->attempt($adminCredentials, $request->remember)) {
             // Authentication successful, redirect to the intended page
-            return view("home");
+            return view("addcity");
         }
     
         // Authentication failed, display an error message

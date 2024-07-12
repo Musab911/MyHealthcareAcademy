@@ -9,7 +9,7 @@ use App\Models\City; // Import the City model
 use App\Models\Industry;
 use App\Models\internship;
 use App\Models\Application;
-
+use App\Models\Contact;
 class admin extends Controller
 {
   
@@ -225,5 +225,8 @@ public function save(Request $request)
         return redirect()->back()->with('error', 'An unexpected error occurred. Please try again later.');
     }
 }
-
+public function contactusadmin() {
+    $contacts = Contact::all(); // Fetch all contacts
+    return view('contactadmin', compact('contacts')); // Pass the data to the view
+}
 }
