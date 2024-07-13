@@ -7,20 +7,19 @@
     <title>Contact_US</title>
     <link href="{{ asset('assets/css/frontend.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/css/contact.css') }}" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-
 </head>
 
 <body>
     <nav>
         <div class="logo">
-            <img src="assets/images/logo.png" alt="logo" />
+            <a href="{{ route('index') }}">
+                <img src="{{ asset('assets/images/logo.png') }}" alt="logo" />
+            </a>
         </div>
         <ul>
-            <li><a href="{{ route('index') }}">Home</a></li>
+
             <li><a href="{{ route('apply.now') }}">Apply Now</a></li>
             <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
             <li><a href="{{ route('about.us') }}">About Us</a></li>
@@ -34,18 +33,11 @@
     </nav>
     <div class="menubar">
         <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Contact Us</a>
-            </li>
+            >
+            <li><a href="{{ route('apply.now') }}">Apply Now</a></li>
+            <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
+            <li><a href="{{ route('about.us') }}">About Us</a></li>
+            <li><a href="{{ route('location') }}">Locations</a></li>
         </ul>
     </div>
     <div class="container-wrapper" id="hero">
@@ -63,14 +55,16 @@
                 </p>
 
                 <div class="buttons">
-
-
                     <script>
-                    document.getElementById('applyNowButton').addEventListener('click', function() {
-                        window.location.href = "{{ url('/practice') }}";
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const = document.getElementById('');
+                        if () {
+                            .addEventListener('click', function() {
+                                window.location.href = "{{ url('/applynow') }}";
+                            });
+                        }
                     });
                     </script>
-
                 </div>
             </div>
             <div class="inner" style="width: 40%">
@@ -93,45 +87,29 @@
         </div>
     </div>
 
-
-
-
-
     <div class="container_foam ">
         <div class="box">
-
-
             <div class="info-section">
                 <img src="\assets\images\contactus.jpg" alt="">
-
 
                 <div class="info-item">
                     <div class="iconbg">
                         <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
-
                     </div>
-
                     <p><a href="mailto:info@myhealthcaresupport.co.uk">info@myhealthcaresupport.co.uk</a></p>
-
                 </div>
                 <div class="info-item">
                     <div class="iconbg">
                         <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
                     </div>
-
                     <p><a href="mailto:info@myhealthcaresupport.co.uk">info@myhealthcaresupport.co.uk</a></p>
-
                 </div>
                 <div class="info-item">
                     <div class="iconbg">
                         <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-
                     </div>
-
                     <p><a href="mailto:info@myhealthcaresupport.co.uk">info@myhealthcaresupport.co.uk</a></p>
-
                 </div>
-
             </div>
             <div class="form-section">
                 <h1>Get in Touch</h1>
@@ -153,7 +131,7 @@
                 </form>
             </div>
         </div>
-
+        <script src="{{ asset('script.js') }}"></script>
 </body>
 
 </html>

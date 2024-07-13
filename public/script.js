@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const counters = document.querySelectorAll('.counter');
 
@@ -39,128 +41,128 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
-//carousel code
+// Carousel code
 const carouselData = [
-            {
-                heading: "Step forward, stand out",
-                subheading: "Build your confidence",
-                description: "Our program empowers you with the skills and experience that employers value. Knowing you have what it takes to succeed, you will start your career journey with confidence.",
-                image: "/assets/images/doctors.webp"
-            },
-            {
-                heading: "Embrace new challenges",
-                subheading: "Discover your potential",
-                description: "Step out of your comfort zone and take on new challenges. Our program helps you discover your true potential and prepares you for a dynamic career.",
-                image: "https://beyondacademy.com/wp-content/uploads/2019/12/home-slider-1-1920x0-c-default.webp"
-            },
-            {
-                heading: "Achieve your goals",
-                subheading: "Reach for success",
-                description: "With our support and guidance, you can achieve your career goals. We provide the resources and opportunities to help you reach new heights of success.",
-                image: "https://beyondacademy.com/wp-content/uploads/2019/12/home-slider-3-1920x0-c-default.webp"
-            }
-        ];
+  {
+    heading: "Step forward, stand out",
+    subheading: "Build your confidence",
+    description: "Our program empowers you with the skills and experience that employers value. Knowing you have what it takes to succeed, you will start your career journey with confidence.",
+    image: "/assets/images/doctors.webp"
+  },
+  {
+    heading: "Embrace new challenges",
+    subheading: "Discover your potential",
+    description: "Step out of your comfort zone and take on new challenges. Our program helps you discover your true potential and prepares you for a dynamic career.",
+    image: "https://beyondacademy.com/wp-content/uploads/2019/12/home-slider-1-1920x0-c-default.webp"
+  },
+  {
+    heading: "Achieve your goals",
+    subheading: "Reach for success",
+    description: "With our support and guidance, you can achieve your career goals. We provide the resources and opportunities to help you reach new heights of success.",
+    image: "https://beyondacademy.com/wp-content/uploads/2019/12/home-slider-3-1920x0-c-default.webp"
+  }
+];
 
-        const carouselContainer = document.querySelector('.carousel');
-        const headingElement = document.querySelector('.carousel-heading');
-        const subheadingElement = document.querySelector('.carousel-subheading');
-        const descriptionElement = document.querySelector('.carousel-description');
-        const dots = document.querySelectorAll('.carousel-dot');
+document.addEventListener('DOMContentLoaded', function() {
+  const carouselContainer = document.querySelector('.carousel');
+  const headingElement = document.querySelector('.carousel-heading');
+  const subheadingElement = document.querySelector('.carousel-subheading');
+  const descriptionElement = document.querySelector('.carousel-description');
+  const dots = document.querySelectorAll('.carousel-dot');
 
-        let currentSlideIndex = 0;
+  let currentSlideIndex = 0;
 
-        function updateSlide(index) {
-            const fadeInClass = 'fade-in';
-            const fadeOutClass = 'fade-out';
+  function updateSlide(index) {
+    const fadeInClass = 'fade-in';
+    const fadeOutClass = 'fade-out';
 
-            // Add fade-out animation to text elements
-            headingElement.classList.add(fadeOutClass);
-            subheadingElement.classList.add(fadeOutClass);
-            descriptionElement.classList.add(fadeOutClass);
+    if (!headingElement || !subheadingElement || !descriptionElement || !carouselContainer) {
+      console.error('Carousel elements are missing in the DOM');
+      return;
+    }
 
-            setTimeout(() => {
-                // Update text content after fade-out animation
-                const slideData = carouselData[index];
-                headingElement.textContent = slideData.heading;
-                subheadingElement.textContent = slideData.subheading;
-                descriptionElement.textContent = slideData.description;
+    // Add fade-out animation to text elements
+    headingElement.classList.add(fadeOutClass);
+    subheadingElement.classList.add(fadeOutClass);
+    descriptionElement.classList.add(fadeOutClass);
 
-                // Remove fade-out and add fade-in animation
-                headingElement.classList.remove(fadeOutClass);
-                subheadingElement.classList.remove(fadeOutClass);
-                descriptionElement.classList.remove(fadeOutClass);
+    setTimeout(() => {
+      // Update text content after fade-out animation
+      const slideData = carouselData[index];
+      headingElement.textContent = slideData.heading;
+      subheadingElement.textContent = slideData.subheading;
+      descriptionElement.textContent = slideData.description;
 
-                headingElement.classList.add(fadeInClass);
-                subheadingElement.classList.add(fadeInClass);
-                descriptionElement.classList.add(fadeInClass);
+      // Remove fade-out and add fade-in animation
+      headingElement.classList.remove(fadeOutClass);
+      subheadingElement.classList.remove(fadeOutClass);
+      descriptionElement.classList.remove(fadeOutClass);
 
-                // Remove fade-in class after animation completes
-                setTimeout(() => {
-                    headingElement.classList.remove(fadeInClass);
-                    subheadingElement.classList.remove(fadeInClass);
-                    descriptionElement.classList.remove(fadeInClass);
-                }, 1000);
-            }, 1000);
+      headingElement.classList.add(fadeInClass);
+      subheadingElement.classList.add(fadeInClass);
+      descriptionElement.classList.add(fadeInClass);
 
-            // Update background image immediately
-            carouselContainer.style.backgroundImage = `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(${carouselData[index].image})`;
+      // Remove fade-in class after animation completes
+      setTimeout(() => {
+        headingElement.classList.remove(fadeInClass);
+        subheadingElement.classList.remove(fadeInClass);
+        descriptionElement.classList.remove(fadeInClass);
+      }, 1000);
+    }, 1000);
 
-            currentSlideIndex = index;
-            dots.forEach((dot, i) => {
-                dot.style.backgroundColor = i === currentSlideIndex ? 'white' : 'transparent';
-            });
-        }
+    // Update background image immediately
+    carouselContainer.style.backgroundImage = `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(${carouselData[index].image})`;
 
-        function currentSlide(index) {
-            updateSlide(index);
-        }
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentSlide(index);
-            });
-        });
-        function redirectToPractice() {
-          window.location.href = '/practice';
-      }
-        function nextSlide() {
-            const nextIndex = (currentSlideIndex + 1) % carouselData.length;
-            updateSlide(nextIndex);
-        }
-
-        updateSlide(currentSlideIndex);
-        setInterval(nextSlide, 10000); // Change slide every 5 seconds
-
-
-        // nsvbar js start
-        const mobileNav = document.querySelector(".hamburger");
-const navbar = document.querySelector(".menubar");
-
-const toggleNav = () => {
-  navbar.classList.toggle("active");
-  mobileNav.classList.toggle("hamburger-active");
-};
-mobileNav.addEventListener("click", () => toggleNav());
-// nsvbar js end
-//navbar animation start
-document.addEventListener("DOMContentLoaded", function () {
-    let header = document.querySelector('nav');
-    let hero = document.getElementById('hero');
-
-    let observer = new IntersectionObserver(function (entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                header.classList.add('hero-visible');
-            } else {
-                header.classList.remove('hero-visible');
-            }
-        });
-    }, {
-        threshold: 0.1 // Adjust this value according to when you want the header to change
+    currentSlideIndex = index;
+    dots.forEach((dot, i) => {
+      dot.style.backgroundColor = i === currentSlideIndex ? 'white' : 'transparent';
     });
+  }
 
-    observer.observe(hero);
+  function currentSlide(index) {
+    updateSlide(index);
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentSlide(index);
+    });
+  });
+
+  function nextSlide() {
+    const nextIndex = (currentSlideIndex + 1) % carouselData.length;
+    updateSlide(nextIndex);
+  }
+
+  updateSlide(currentSlideIndex);
+  setInterval(nextSlide, 10000); // Change slide every 10 seconds
+
+  // Navbar JS
+  const mobileNav = document.querySelector(".hamburger");
+  const navbar = document.querySelector(".menubar");
+
+  const toggleNav = () => {
+    navbar.classList.toggle("active");
+    mobileNav.classList.toggle("hamburger-active");
+  };
+  mobileNav.addEventListener("click", () => toggleNav());
+
+  // Navbar animation
+  let header = document.querySelector('nav');
+  let hero = document.getElementById('hero');
+
+  let observer = new IntersectionObserver(function (entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        header.classList.add('hero-visible');
+      } else {
+        header.classList.remove('hero-visible');
+      }
+    });
+  }, {
+    threshold: 0.1 // Adjust this value according to when you want the header to change
+  });
+
+  observer.observe(hero);
 });
 
-//navbar animation end

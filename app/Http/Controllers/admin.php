@@ -145,7 +145,7 @@ class admin extends Controller
     
     public function fahad(){
         $cities = Industry::select('city')->distinct()->get();
-        return view('practice', compact('cities'));
+        return view('applynow', compact('cities'));
     }
 
     public function getIndustries(Request $request)
