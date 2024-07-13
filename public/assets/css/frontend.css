@@ -757,7 +757,7 @@ nav ul li a:hover {
     object-fit: contain;
 }
 .location-card {
-    width: 30%;
+    width: 28%;
     height: 200px;
     display: flex;
     flex-direction: column;

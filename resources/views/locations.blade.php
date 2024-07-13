@@ -33,7 +33,7 @@
     </nav>
     <div class="menubar">
         <ul>
-          
+
             <li><a href="{{ route('apply.now') }}">Apply Now</a></li>
             <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
             <li><a href="{{ route('about.us') }}">About Us</a></li>

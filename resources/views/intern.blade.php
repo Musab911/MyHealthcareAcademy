@@ -1,9 +1,15 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('title', 'Internship Details')
-
-@push('styles')
-<link href="{{ asset('assets/css/form.css') }}" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_US</title>
+    <link href="{{ asset('assets/css/frontend.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/css/contact.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="{{ asset('assets/css/form.css') }}" rel="stylesheet" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
@@ -28,11 +34,41 @@
         font-family: 'Poppins', sans-serif;
     }
 </style>
-@endpush
+</head>
 
-@section('content')
+<body>
+    <nav>
+        <div class="logo">
+            <a href="{{ route('index') }}">
+                <img src="{{ asset('assets/images/logo.png') }}" alt="logo" />
+            </a>
+        </div>
+        <ul>
 
-<div class="outercontainer">
+            <li><a href="{{ route('apply.now') }}">Apply Now</a></li>
+            <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
+            <li><a href="{{ route('about.us') }}">About Us</a></li>
+            <li><a href="{{ route('location') }}">Locations</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </nav>
+    <div class="menubar">
+        <ul>
+
+            <li><a href="{{ route('apply.now') }}">Apply Now</a></li>
+            <li><a href="{{ route('contact.us') }}">Contact Us</a></li>
+            <li><a href="{{ route('about.us') }}">About Us</a></li>
+            <li><a href="{{ route('location') }}">Locations</a></li>
+        </ul>
+    </div>
+
+
+
+<div class="outercontainer"  >
    <div class="messagecontainer">
    @if (session('success'))
     <div class="alert alert-success">
@@ -408,4 +444,8 @@
 
 </div>
 
-@endsection
+
+<script src="{{ asset('script.js') }}"></script>
+</body>
+
+</html>
