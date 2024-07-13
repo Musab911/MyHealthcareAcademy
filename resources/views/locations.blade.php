@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact_US</title>
+    <title>Location</title>
     <link href="{{ asset('assets/css/frontend.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/css/contact.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
