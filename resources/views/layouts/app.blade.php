@@ -15,8 +15,8 @@
 
 <body>
     <nav>
-        <div class="logo">
-            <img src="{{ asset('assets/images/logo.png') }}" alt="logo" />
+        <div class=" logo">
+            <img src="assets/images/logo.png" alt="logo" />
 
         </div>
         <ul>
@@ -41,7 +41,6 @@
             <li><a href="{{ route('location') }}">Locations</a></li>
         </ul>
     </div>
-
     @yield('content')
 
     <!-- Scripts -->
@@ -49,6 +48,7 @@
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('assets/js/script.js') }}"></script>
+
 </body>
 
 </html>
