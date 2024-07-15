@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\admin;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 //Route::get('/intern', [admin::class, 'index']);
