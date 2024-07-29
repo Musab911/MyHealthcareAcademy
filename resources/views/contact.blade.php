@@ -116,7 +116,8 @@
                 <h3>Let's Chat, Reach Out to Us</h3>
                 <p class="jbt">Have questions or feedback? We're here to help. Send us a message, and we'll respond
                     within 24 hours.</p>
-                <form>
+                <form  action = "{{ route('cities.store') }}"  method="post" >
+                    @csrf
                     <div class="inline-fields">
                         <input type="text" name="first-name" placeholder="First name" required>
                         <input type="text" name="last-name" placeholder="Last name" required>
