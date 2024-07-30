@@ -50,7 +50,7 @@ Route::get('/industries', [IndustryController::class, 'index'])->name('index.ind
 
 
 
-Route::get('/internshipform', [admin::class, 'userform'])->name('user');
+Route::get('/internshipform', [admin::class, 'userform'])->name('userform');
 
 Route::post('/internships/store', [admin::class, 'store'])->name('internships.store');
 

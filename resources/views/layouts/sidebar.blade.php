@@ -10,7 +10,7 @@
         <ul class="sidebar-menu do-nicescrol">
            
             <li>
-                <a href="{{ route('user') }}">
+                <a href="{{ route('userform') }}">
                     <i class="zmdi zmdi-view-dashboard"></i> <span>Internship</span>
                 </a>
             </li>
